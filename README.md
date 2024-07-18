@@ -6,6 +6,3 @@ A small library project as a practice of objects in javascript.
 ![demo](public/demo.png)
 
 [View Live Demo](https://jasmirmd.github.io/library/)
-
-### Resources:
-- [Catppuccin Palette](https://catppuccin.com/palette)
