@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library</title>
+  <link rel="stylesheet" href="src/base.css">
+  <script src="src/main.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <dialog class="modal">
+      <form method="dialog">
+        <fieldset>
+          <legend>New Book</legend>
+          <label>Author: <input placeholder="Haruki Murakami..." class="author" type="text"></label>
+          <label>Title: <input placeholder="1Q84..." class="title" type="text"></label>
+          <label>Pages: <input placeholder="1400" class="pages" type="number"></label>
+          <label>Readed:
+            <select class="readed">
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+          </label>
+          <div class="buttons">
+            <button class="accept-btn" type="button">Accept</button>
+            <button class="close-btn" type="button">Close</button>
+          </div>
+        </fieldset>
+      </form>
+    </dialog>
+    <div class="app">
+      <div class="title">
+        <h1>Library</h1>
+      </div>
+      <div class="books"></div>
+      <div class="addbook">
+        <button class="addbook-btn" type="button">ADD BOOK</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
