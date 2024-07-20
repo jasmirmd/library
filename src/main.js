@@ -9,6 +9,19 @@ const bookTitle = document.querySelector('.title');
 const bookPages = document.querySelector('.pages');
 const bookRead = document.querySelector('.readed');
 
+class Book {
+  constructor(author, title, pages, readed) {
+    this.author = author;
+    this.title = title;
+    this.pages = pages;
+    this.readed = readed;
+  }
+
+  toggleRead() {
+    this.readed = !this.readed;
+  }
+}
+
 const Books = [];
 
 const initialBook = new Book(
@@ -20,17 +33,6 @@ const initialBook = new Book(
 );
 
 Books.push(initialBook);
-
-function Book(author, title, pages, readed) {
-  this.author = author;
-  this.title = title;
-  this.pages = pages;
-  this.readed = readed;
-
-  this.toggleRead = function() {
-    this.readed = !this.readed;
-  }
-}
 
 function cleanContainer() {
   while(booksContainer.firstChild) {
